@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Comparison</title>
+    <style>
+        /* Basic reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Key features styling */
+td:last-child {
+    white-space: pre-wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Car Comparison</h2>
+        <table>
+            <tr>
+                <th>Specification</th>
+                <th>{{car1_model}}</th>
+                <th>{{car2_model}}</th>
+            </tr>
+            <tr>
+                <td>Summary</td>
+                <td>{{car1_summary}}</td>
+                <td>{{car2_summary}}</td>
+            </tr>
+            <tr>
+                <td>Engine</td>
+                <td>{{car1_engine}}</td>
+                <td>{{car2_engine}}</td>
+            </tr>
+            <tr>
+                <td>Fuel Type</td>
+                <td>{{car1_fuel}}</td>
+                <td>{{car2_fuel}}</td>
+            </tr>
+            <tr>
+                <td>Transmission</td>
+                <td>{{car1_transmission}}</td>
+                <td>{{car2_transmission}}</td>
+            </tr>
+            <tr>
+                <td>Max Power</td>
+                <td>{{car1_power}}</td>
+                <td>{{car2_power}}</td>
+            </tr>
+            <tr>
+                <td>Max Torque</td>
+                <td>{{car1_torque}}</td>
+                <td>{{car2_torque}}</td>
+            </tr>
+            <tr>
+                <td>Mileage / Range</td>
+                <td>{{car1_mileage}}</td>
+                <td>{{car2_mileage}}</td>
+            </tr>
+            <tr>
+                <td>Price Range</td>
+                <td>{{car1_price}}</td>
+                <td>{{car2_price}}</td>
+            </tr>
+            <tr>
+                <td>Key Features</td>
+                <td>{{car1_features}}</td>
+                <td>{{car2_features}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
